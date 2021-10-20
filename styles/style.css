@@ -1,0 +1,7 @@
+li {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style: none;
+  display: inline-block;
+}
