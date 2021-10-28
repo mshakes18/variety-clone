@@ -1,7 +1,50 @@
-li {
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+nav {
+  background-color: #1a282f;
+  width: 100%;
+  border-top: #ffffff 1px solid;
+}
+
+.main-nav li,
+.secondary-nav li {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   list-style: none;
+
+  color: #ffffff;
+}
+
+.main-nav li {
   display: inline-block;
+}
+.secondary-nav li {
+  display: block;
+}
+
+/* HERO SECTION */
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  background-color: #ffffff;
+  column-gap: 10px;
+}
+
+.breaking {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.hero-image {
+  height: 250px;
+  width: auto;
 }
