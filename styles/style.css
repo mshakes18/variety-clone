@@ -101,6 +101,11 @@ nav {
   grid-row: 6;
   grid-column: 1/4;
 }
+
+.reviews {
+  grid-row: 7;
+  grid-column: 1/4;
+}
 /* FOOTER */
 footer {
   grid-row: 7/-1;
