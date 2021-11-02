@@ -36,7 +36,7 @@ nav {
   grid-gap: 25px;
 }
 
-.breaking {
+.breaking-news {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
@@ -102,12 +102,67 @@ nav {
   grid-column: 1/4;
 }
 
+.rc-image {
+  height: 250px;
+  width: auto;
+}
+/* REVIEWS */
 .reviews {
   grid-row: 7;
   grid-column: 1/4;
 }
+/* VIP */
+.vip {
+  grid-row: 8;
+  grid-column: 1/4;
+}
+
+/* LATEST NEWS */
+.latest-news {
+  grid-row: 9;
+  grid-column: 1/4;
+}
+
+/* REVIEWS */
+.reviews {
+  grid-row: 10;
+  grid-column: 1/4;
+}
+.video {
+  grid-row: 11;
+  grid-column: 1/4;
+}
+.vip {
+  grid-row: 12;
+  grid-column: 1/4;
+}
+
+.voices {
+  grid-row: 13;
+  grid-column: 1/4;
+}
+
+.awards {
+  grid-row: 14;
+  grid-column: 1/4;
+}
+
+.o-news {
+  grid-row: 15;
+  grid-column: 1/4;
+}
+
+.magazine {
+  grid-row: 16;
+  grid-column: 1/4;
+}
+
+.brands {
+  grid-row: 17;
+  grid-column: 1/4;
+}
 /* FOOTER */
 footer {
-  grid-row: 7/-1;
+  grid-row: 18;
   list-style: none;
 }
