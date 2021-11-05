@@ -29,12 +29,13 @@ nav {
 }
 
 /* HERO SECTION */
-.hero-container {
+/* .hero-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr) 1.2fr;
   grid-template-rows: repeat(4, 1fr);
   grid-gap: 25px;
-}
+} */
+
 /* BREAKING NEWS */
 .breaking-news {
   font-family: "IBM Plex Sans", sans-serif;
@@ -94,7 +95,7 @@ nav {
 .sign-up {
   background-color: #283842;
   grid-row: 5;
-  grid-column: 1/4;
+  grid-column: 1/-1;
   height: 70px;
 }
 
@@ -117,9 +118,9 @@ nav {
 .recommended {
   border-top: #283842 10px solid;
   background-color: #ffffff;
-  grid-row: 6;
-  grid-column: 1/4;
-  display: flex;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, minmax(100px, max-content));
+  display: grid;
 }
 
 .recommended > div:nth-child(-n + 6) {
@@ -134,7 +135,20 @@ nav {
   height: 100px;
   width: auto;
 }
-.rc-title, .mp-title {
+
+.rc1,
+.rc2,
+.rc3,
+.rc4,
+.rc5,
+.rc6 {
+  grid-row: 2/3;
+}
+.rc-title-ctn {
+  grid-column: 1/3;
+}
+.rc-title,
+.mp-title {
   font-family: "IBM Plex Sans", sans-serif;
   text-transform: uppercase;
   font-size: 24px;
