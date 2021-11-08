@@ -15,6 +15,7 @@ nav {
 h2 {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .hs-text,
 .sk-text {
@@ -180,6 +181,67 @@ h2 {
   text-transform: uppercase;
 }
 
+/* LATEST NEWS */
+
+.latest-news {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: repeat(9, minmax(100px, max-content));
+  background-color: #ffffff;
+}
+
+/* IMAGE */
+.ln-img {
+  grid-row: 2;
+  height: 100px;
+  width: auto;
+}
+/* TEXT */
+
+.ln-text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.ln-one {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.ln-two {
+  grid-column: 2;
+  grid-row: 9;
+}
+
+.ln-three {
+  grid-column: 2;
+  grid-row: 3;
+}
+.ln-four {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.ln-five {
+  grid-column: 2;
+  grid-row: 5;
+}
+.ln-six {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.ln-seven {
+  grid-column: 2;
+  grid-row: 7;
+}
+
+.ln-eight {
+  grid-column: 2;
+  grid-row: 8;
+}
+
 /* REVIEWS */
 .reviews {
   grid-row: 7;
@@ -189,14 +251,6 @@ h2 {
 .vip {
   grid-row: 8;
   grid-column: 1/4;
-}
-
-/* LATEST NEWS */
-
-.latest-news {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  grid-template-rows: repeat(8, 1fr);
 }
 
 /* REVIEWS */
