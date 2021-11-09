@@ -98,8 +98,20 @@ h2 {
   grid-row: 1/-3;
   background-color: #ffffff;
   border-top: #eee809 10px solid;
-  display: flex;
-  flex-direction: column;
+}
+.mp-one {
+  border-top: 2px #c4cace solid;
+  border-bottom: 2px #c4cace solid;
+}
+.mp-img {
+  grid-column: 1;
+  margin: 5px;
+  height: 65px;
+  width: auto;
+}
+
+.mp-one p {
+  grid-column: 2;
 }
 
 /* VIP SIGN UP BAR */
@@ -182,7 +194,6 @@ h2 {
 }
 
 /* LATEST NEWS */
-
 .latest-news {
   display: grid;
   grid-template-columns: 1fr, 1fr;
@@ -192,6 +203,7 @@ h2 {
 
 /* IMAGE */
 .ln-img {
+  grid-column: 2;
   grid-row: 2;
   height: 100px;
   width: auto;
@@ -244,24 +256,56 @@ h2 {
 
 /* REVIEWS */
 .reviews {
-  grid-row: 7;
-  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-rows: 3fr;
+  /* grid-row: 7;
+  grid-column: 1/4; */
+  background-color: #ffffff;
 }
+
+.review-one {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.review-two {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.review-three {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.review-four {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.more {
+  grid-column: 5;
+  grid-row: 3;
+}
+/* REVIEWS NAV */
+.reviews-nav {
+  grid-column: 2/4;
+  list-style: none;
+}
+
+/* VIDEO */
+
+.video {
+  grid-template-columns: 4fr;
+}
+
 /* VIP */
 .vip {
   grid-row: 8;
   grid-column: 1/4;
 }
 
-/* REVIEWS */
-.reviews {
-  grid-row: 10;
-  grid-column: 1/4;
-}
-.video {
-  grid-row: 11;
-  grid-column: 1/4;
-}
 .vip {
   grid-row: 12;
   grid-column: 1/4;
