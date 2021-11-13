@@ -59,7 +59,7 @@ h2 {
 /* HERO STORY */
 .hero-story {
   padding: 12px;
-  display: grid;
+  /* display: grid; */
   grid-column: 1/4;
   background-color: #ffffff;
 }
@@ -155,7 +155,7 @@ h2 {
   border-top: #283842 10px solid;
   grid-template-columns: repeat(6, 210px);
   grid-template-rows: repeat(2, minmax(100px, max-content));
-  display: grid;
+  /* display: grid; */
 }
 
 .recommended > div:nth-child(-n + 6) {
@@ -207,10 +207,23 @@ h2 {
 
 /* LATEST NEWS */
 .latest-news {
-  display: grid;
-  grid-template-columns: 900px;
-  grid-template-rows: repeat(9, minmax(100px, max-content));
+  /* display: grid; */
+  /* grid-template-columns: 900px;
+  grid-template-rows: repeat(9, minmax(100px, max-content)); */
   background-color: #ffffff;
+  grid-column: 1/4;
+}
+
+/* LATEST NEWS COLUMN */
+.ln-column {
+  grid-column: 4;
+  grid-row: 8/9;
+  background-color: #243842;
+}
+
+.alw {
+  height: 304px;
+  width: 304px;
 }
 
 /* IMAGE */
@@ -271,7 +284,7 @@ h2 {
 
 /* REVIEWS */
 .reviews {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 4fr;
   grid-template-rows: 3fr;
   /* grid-row: 7;
