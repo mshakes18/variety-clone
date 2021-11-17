@@ -151,11 +151,10 @@ h2 {
 
 /* RECOMMENED FOR YOU */
 .recommended {
-  background-color: #ffffff;
-  border-top: #283842 10px solid;
   grid-template-columns: repeat(6, 210px);
   grid-template-rows: repeat(2, minmax(100px, max-content));
-  /* display: grid; */
+  display: grid;
+  background-color: #ffffff;
 }
 
 .recommended > div:nth-child(-n + 6) {
@@ -169,7 +168,7 @@ h2 {
 .rc-image {
   width: 100%;
 }
-
+/* HEIGHT/SPAN */
 .rc1,
 .rc2,
 .rc3,
@@ -207,13 +206,64 @@ h2 {
 
 /* LATEST NEWS */
 .latest-news {
-  /* display: grid; */
-  /* grid-template-columns: 900px;
-  grid-template-rows: repeat(9, minmax(100px, max-content)); */
+  display: grid;
+  grid-template-columns: 200px 900px;
+  grid-template-rows: repeat(9, minmax(100px, max-content));
   background-color: #ffffff;
-  grid-column: 1/4;
 }
 
+/* LATEST NEWS TEXT */
+.ln-text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* LATEST NEWS STORIES */
+.ln-one {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+
+.ln-two {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.ln-three {
+  grid-column: 1;
+  grid-row: 4;
+}
+.ln-four {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.ln-five {
+  grid-column: 1;
+  grid-row: 5;
+}
+.ln-six {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+.ln-seven {
+  grid-column: 1;
+  grid-row: 7;
+}
+
+.ln-eight {
+  grid-column: 1;
+  grid-row: 8;
+}
+
+/* LATEST NEWS IMAGE */
+.ln-img {
+  grid-column: 1;
+  grid-row: 1;
+  height: 100px;
+  width: auto;
+}
 /* LATEST NEWS COLUMN */
 .ln-column {
   grid-column: 4;
@@ -224,62 +274,6 @@ h2 {
 .alw {
   height: 304px;
   width: 304px;
-}
-
-/* IMAGE */
-.ln-img {
-  grid-column: 2;
-  grid-row: 2;
-  height: 100px;
-  width: auto;
-}
-/* LATEST NEWS TEXT */
-
-.ln-text {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.ln-one {
-  grid-column: 1/2;
-  grid-row: 2;
-}
-
-.ln-two {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-.ln-three {
-  grid-column: 2;
-  grid-row: 3;
-}
-.ln-four {
-  grid-column: 4;
-  grid-row: 1;
-}
-
-.ln-five {
-  grid-column: 2;
-  grid-row: 5;
-}
-.ln-six {
-  grid-column: 2;
-  grid-row: 6;
-}
-
-.ln-seven {
-  grid-column: 2;
-  grid-row: 7;
-}
-
-.ln-eight {
-  grid-column: 2;
-  grid-row: 8;
-}
-.ln-img {
-  grid-column: 2;
 }
 
 /* REVIEWS */
