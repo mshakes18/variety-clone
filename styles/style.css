@@ -57,6 +57,59 @@ h2 {
   background-color: #ffffff;
 }
 
+/* STORY FONT STYLES */
+.story-title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.story-main-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 5px 0;
+  font-weight: 400;
+}
+
+.story-type {
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  color: #6b7b84;
+  font-size: 16px;
+}
+
+.story-authour {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #6b7b84;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.story-time {
+  font-family: IBM Plex Mono, monospace;
+  color: #6b7b84;
+  font-size: 12px;
+}
+
+.story-secondary-title {
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.story-secondary-text {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.story1_text,
+.story2_text,
+.story3_text,
+.story4_text {
+  padding: 12px;
+}
+
 /* STORY ONE */
 .story1 {
   display: grid;
@@ -168,6 +221,17 @@ h2 {
   grid-column: 2/3;
 }
 
+.story-info {
+  display: grid;
+  padding-top: 110px;
+}
+.card {
+  background-color: white;
+  box-shadow: -3px 6px 5px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 6px 5px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 6px 5px -3px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+}
 /* MOST POPULAR COLUMN */
 .most-popular {
   grid-column: 2/3;
@@ -177,16 +241,23 @@ h2 {
 .mp-one {
   border-top: 2px #c4cace solid;
   border-bottom: 2px #c4cace solid;
+  display: flex;
 }
 .mp-img {
   grid-column: 1;
-  margin: 5px;
+  padding: 8px;
   height: 65px;
-  width: auto;
+  width: 65px;
 }
 
-.mp-one p {
-  grid-column: 2;
+.mp-stories {
+  padding: 18px;
+}
+
+.mp-text {
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px;
 }
 
 /* VIP SIGN UP BAR */
@@ -401,43 +472,42 @@ h2 {
 
 /* REVIEWS */
 .reviews {
-  display: grid;
-  grid-template-columns: 5fr;
-  grid-template-rows: 3fr;
   background-color: #ffffff;
   grid-row: 7;
   grid-column: 1/3;
 }
 
 /* REVIEWS NAV */
-.reviews-nav li {
-  list-style: none;
-  display: inline;
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-
+/* REVIEW STORIES */
 .review-one {
-  grid-column: 2/3;
-  grid-row: 2;
+  grid-column: 1/2;
 }
 
 .review-two {
-  grid-column: 3/4;
-  grid-row: 2;
+  grid-column: 2/3;
 }
 
 .review-three {
-  grid-column: 4/5;
-  grid-row: 2;
-}
-
-.review-four {
-  grid-column: 5/6;
-  grid-row: 2;
+  grid-column: 3/4;
 }
 
 .more {
-  grid-column: 5;
+  grid-column: 4;
   grid-row: 3;
+}
+
+.review-card {
+  padding: 10px;
+  border-right: 1px solid gray;
+}
+
+.review-four {
+  grid-column: 4/5;
+  border-right: none;
 }
 
 /* VIDEO */
