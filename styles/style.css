@@ -129,6 +129,12 @@ h2 {
   height: 100%;
   object-fit: cover;
 }
+/* STORY INFO */
+.story-info {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
 
 /* STORY TWO */
 .story2 {
@@ -221,10 +227,6 @@ h2 {
   grid-column: 2/3;
 }
 
-.story-info {
-  display: grid;
-  padding-top: 140px;
-}
 .card {
   background-color: white;
   box-shadow: -3px 6px 5px -3px rgba(0, 0, 0, 0.75);
@@ -233,18 +235,24 @@ h2 {
   padding: 10px;
 }
 /* MOST POPULAR COLUMN */
+.mp-title {
+  padding: 5px 0 0 18px;
+  font-weight: 700;
+}
 .most-popular {
   grid-column: 2/3;
   background-color: #ffffff;
   border-top: #eee809 10px solid;
 }
-.mp-one {
-  border-top: 2px #c4cace solid;
-  border-bottom: 2px #c4cace solid;
-  display: flex;
+.mp-one,
+.mp-two,
+.mp-three,
+.mp-four,
+.mp-five {
+  border-top: 1px #c4cace solid;
+  border-bottom: 1px #c4cace solid;
 }
 .mp-img {
-  grid-column: 1;
   padding: 8px;
   height: 65px;
   width: 65px;
@@ -334,18 +342,14 @@ h2 {
   font-weight: bold;
   font-size: 16px;
 }
-.rc-tag {
-  font-family: "IBM Plex Mono", monospace;
-  text-transform: uppercase;
-}
 
-/* LATEST NEWS */
+/* LATEST NEWS CONTAINER */
 .latest-news {
   display: grid;
-  grid-template-columns: 200px 900px;
+  grid-template-columns: 200px auto;
   grid-template-rows: repeat(9, minmax(100px, max-content));
   background-color: #ffffff;
-  grid-column: 1/4;
+  grid-column: 1/2;
   border-top: 10px solid #243842;
 }
 /* LN TITLE */
@@ -354,10 +358,29 @@ h2 {
   padding: 15px;
 }
 /* LATEST NEWS TEXT */
-.ln-text {
+.ln-headline {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.ln-tag {
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  border-right: 1px solid grey;
+  padding-right: 12px;
+}
+
+.ln-info {
+  display: flex;
+  padding: 5px;
+}
+.ln-time {
+  font-family: IBM Plex Mono, monospace;
+  color: #6b7b84;
+  font-size: 12px;
+  padding-left: 12px;
 }
 
 /* LATEST NEWS STORIES */
@@ -370,7 +393,7 @@ h2 {
 .ln-six-text,
 .ln-seven-text,
 .ln-eight-text {
-  padding: 10px;
+  padding: 20px;
 }
 
 /* LN ONE */
@@ -458,16 +481,51 @@ h2 {
   grid-row: 2;
   width: 200px;
 }
-/* LATEST NEWS COLUMN */
-.ln-column {
-  grid-column: 4;
+/* LATEST NEWS SIDEBAR */
+.ln-sidebar {
+  grid-column: 2/3;
   grid-row: 5/6;
   background-color: #243842;
+  margin-bottom: 15px;
 }
 
+.ln-sb-main {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 32px;
+  padding: 8px;
+}
+
+.ln-sb-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  border-bottom: 1px solid #6b7b84;
+  padding-bottom: 20px;
+}
+
+.ln-sb-two p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.ln-sb-subtext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #6b7b84;
+}
 .alw {
   height: 304px;
-  width: 304px;
+  width: 300px;
 }
 
 /* REVIEWS */
@@ -477,7 +535,20 @@ h2 {
   grid-column: 1/3;
 }
 
-/* REVIEWS NAV */
+.reviews-nav {
+  display: flex;
+  font-family: IBM Plex Mono, monospace;
+  color: #6b7b84;
+  font-size: 20px;
+  list-style: none;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.reviews-nav li {
+  padding: 5px;
+}
+/* CONTAINER */
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
