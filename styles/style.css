@@ -85,6 +85,7 @@ h2 {
   color: #6b7b84;
   font-weight: 700;
   font-size: 12px;
+  margin-right: 5px;
 }
 
 .story-time {
@@ -132,7 +133,6 @@ h2 {
 /* STORY INFO */
 .story-info {
   display: flex;
-  flex-direction: column;
   align-self: flex-end;
 }
 
@@ -251,6 +251,7 @@ h2 {
 .mp-five {
   border-top: 1px #c4cace solid;
   border-bottom: 1px #c4cace solid;
+  display: flex;
 }
 .mp-img {
   padding: 8px;
