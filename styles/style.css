@@ -31,8 +31,9 @@ h2 {
   color: #ffffff;
 }
 /* MAIN NAV */
-.main-nav li {
-  display: inline-block;
+.main-nav ul {
+  display: flex;
+  justify-content: space-evenly;
 }
 /* SECONDARY NAV */
 .secondary-nav li {
@@ -703,7 +704,7 @@ h2 {
   color: #ffffff;
   display: grid;
   grid-template-columns: 80% 20%;
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(5, 100px);
 }
 
 /* VIP */
