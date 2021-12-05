@@ -697,12 +697,13 @@ h2 {
 
 /* VIDEO */
 .video {
-  display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: repeat(3, 1fr);
   grid-row: 8/9;
   grid-column: 1/3;
   background-color: #243842;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: repeat(3, 200px);
 }
 
 /* VIP */
