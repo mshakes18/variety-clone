@@ -714,24 +714,33 @@ h2 {
 
 /* MAIN VIP STORY */
 
-.main-vip-story {
+.vip-ctn {
   display: grid;
   grid-template-columns: 50% 25% 25%;
   grid-template-rows: repeat(4, 180px);
 }
 
-.main-story-image {
-  grid-column: 1;
-  grid-row: 2/3;
-}
-
-.main-story-text {
+.vip-main-story-text {
   grid-column: 1;
   grid-row: 4;
 }
-
-.vip-story-two {
+.vip-story-two-hl {
   grid-column: 2;
+  grid-row: 4;
+}
+
+.vip-story-three-hl {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.vip-story-four-hl {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.vip-story-five-hl {
+  grid-column: 3;
   grid-row: 3;
 }
 
@@ -746,13 +755,35 @@ h2 {
 .voices-ctn {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 200px);
+  grid-template-rows: minmax(100px, max-content);
 }
 
+.voices-title,
+.voices-one-text,
+.voices-two-text,
+.voices-three-text,
+.voices-four-text {
+  color: #ffffff;
+}
 .voices-one-text {
   grid-column: 1;
-  grid-row: 2/3;
+  grid-row: 3/4;
   color: #ffffff;
+}
+
+.voices-two-text {
+  grid-column: 2;
+  grid-row: 3/4;
+}
+
+.voices-three-text {
+  grid-column: 3;
+  grid-row: 3/4;
+}
+
+.voices-four-text {
+  grid-column: 4;
+  grid-row: 3/4;
 }
 
 .awards {
