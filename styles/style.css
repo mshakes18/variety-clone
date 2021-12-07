@@ -31,7 +31,7 @@ h2 {
   color: #ffffff;
 }
 /* MAIN NAV */
-.main-nav ul {
+.main-nav {
   display: flex;
   justify-content: space-evenly;
 }
@@ -39,7 +39,6 @@ h2 {
 .secondary-nav li {
   display: block;
 }
-
 /* CONTAINER */
 .container {
   margin: 0 auto;
@@ -709,16 +708,82 @@ h2 {
 
 /* VIP */
 .vip {
-  display: grid;
   grid-row: 9;
   grid-column: 1/3;
-  grid-template-columns: 50% 25% 25%;
-  grid-template-rows: repeat(2, 1fr);
 }
 
+/* MAIN VIP STORY */
+
+.vip-ctn {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: repeat(4, 180px);
+}
+
+.vip-main-story-text {
+  grid-column: 1;
+  grid-row: 4;
+}
+.vip-story-two-hl {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.vip-story-three-hl {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.vip-story-four-hl {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.vip-story-five-hl {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+/* VOICES */
 .voices {
   grid-row: 13;
   grid-column: 1/4;
+  background-color: #1a282f;
+  border-top: 6px solid #6b7b84;
+}
+
+.voices-ctn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(100px, max-content);
+}
+
+.voices-title,
+.voices-one-text,
+.voices-two-text,
+.voices-three-text,
+.voices-four-text {
+  color: #ffffff;
+}
+.voices-one-text {
+  grid-column: 1;
+  grid-row: 3/4;
+  color: #ffffff;
+}
+
+.voices-two-text {
+  grid-column: 2;
+  grid-row: 3/4;
+}
+
+.voices-three-text {
+  grid-column: 3;
+  grid-row: 3/4;
+}
+
+.voices-four-text {
+  grid-column: 4;
+  grid-row: 3/4;
 }
 
 .awards {
