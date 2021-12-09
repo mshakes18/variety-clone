@@ -755,7 +755,7 @@ h2 {
 .voices-ctn {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(100px, max-content);
+  grid-template-rows: repeat (2, minmax (10px, max-content));
 }
 
 .voices-title,
@@ -765,10 +765,27 @@ h2 {
 .voices-four-text {
   color: #ffffff;
 }
+
+.voices-title {
+  grid-column: 1;
+  grid-row: 1/-1;
+  padding: 6px;
+}
+
 .voices-one-text {
   grid-column: 1;
   grid-row: 3/4;
   color: #ffffff;
+}
+
+.voices-one {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.voices-one-image {
+  width: 200px;
+  padding: 10px;
 }
 
 .voices-two-text {
@@ -786,19 +803,90 @@ h2 {
   grid-row: 3/4;
 }
 
+/* AWARDS */
 .awards {
   grid-row: 14;
   grid-column: 1/4;
 }
 
+.awards-ctn {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: repeat(4, 180px);
+}
+
+.awards-one-text {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.awards-two-text {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.awards-three-text {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.awards-four-text {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.awards-five-text {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/* OTHER NEWS ONE */
 .o-news {
   grid-row: 15;
   grid-column: 1/4;
 }
 
+.o-news-ctn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat (7, minmax (10px, max-content));
+}
+.o-news-tv-title {
+  grid-row: 1;
+}
+.tv-one-text {
+  grid-row: 2;
+}
+
+.tv-two-text {
+  grid-row: 3;
+}
+
+.tv-three-text {
+  grid-row: 4;
+}
+
+.tv-four-text {
+  grid-row: 5;
+}
+
+.tv-five-text {
+  grid-row: 6;
+}
+
 .magazine {
   grid-row: 16;
   grid-column: 1/4;
+}
+
+.magazine-ctn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat (4, minmax (10px, max-content));
+}
+
+.mag-one {
+  grid-column: 1;
 }
 
 .brands {
