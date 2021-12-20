@@ -55,6 +55,7 @@ h2 {
   font-weight: 700;
   margin-bottom: 20px;
   background-color: #ffffff;
+  display: flex;
 }
 
 /* STORY FONT STYLES */
@@ -719,6 +720,7 @@ h2 {
   grid-template-columns: 50% 25% 25%;
   grid-template-rows: repeat(4, max-content);
   margin-bottom: 15px;
+  background-color: #ffffff;
 }
 
 .vip-one {
@@ -782,6 +784,7 @@ h2 {
 .voices-one {
   grid-column: 1/2;
   grid-row: 2/3;
+  border-right: 1px solid grey;
 }
 
 .voices-two {
@@ -799,7 +802,8 @@ h2 {
   grid-row: 2/3;
 }
 .voices-one-image {
-  width: 200px;
+  height: 149px;
+  width: 225px;
   padding: 10px;
 }
 
@@ -828,6 +832,8 @@ h2 {
   display: grid;
   grid-template-columns: 50% 25% 25%;
   grid-template-rows: repeat(4, max-content);
+  background-color: #ffffff;
+  margin-bottom: 15px;
 }
 
 .awards-one {
@@ -865,16 +871,15 @@ h2 {
   height: 200px;
 }
 
-/* OTHER NEWS ONE */
-.o-news {
-  grid-row: 15;
-  grid-column: 1/4;
-}
 /* OTHER NEWS CONTAINER */
 .o-news-ctn {
   display: grid;
+  grid-row: 15;
+  grid-column: 1/4;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
+  background-color: #ffffff;
+  margin-bottom: 15px;
 }
 
 .tv {
@@ -905,6 +910,8 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
+  background-color: #ffffff;
+  margin-bottom: 15px;
 }
 
 /* MAGAZINE */
@@ -916,16 +923,34 @@ h2 {
 .magazine-ctn {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat (4, minmax (10px, max-content));
+  grid-template-rows: repeat (4, minmax(10px, max-content));
+  background-color: #ffffff;
+  margin-bottom: 15px;
 }
 
 .mag-one {
   grid-column: 1;
 }
-
+/* MORE FROM OUR BRANDS */
 .brands {
   grid-row: 17;
   grid-column: 1/4;
+}
+
+.brands-ctn {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, minmax(100px, max-content));
+  background-color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.brands-ctn-title {
+  grid-column: 1/-1;
+}
+.brand-image {
+  height: 200px;
+  width: 220px;
 }
 /* FOOTER */
 footer {
