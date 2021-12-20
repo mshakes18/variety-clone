@@ -310,12 +310,11 @@ h2 {
   margin-bottom: 15px;
 }
 
-.recommended > div:nth-child(-n + 6) {
-  border-right: #c4cace 1px solid;
+.rc1 {
+  border-right: 1px solid hotpink;
 }
 
 .recommended > div {
-  margin: 25px 0 25px 0;
   padding: 0 10px 0 10px;
 }
 .rc-image {
