@@ -312,6 +312,7 @@ h2 {
 
 .rc1 {
   border-right: 1px solid hotpink;
+  margin-bottom: 15px;
 }
 
 .recommended > div {
@@ -640,6 +641,7 @@ h2 {
   background-color: #ffffff;
   grid-row: 7;
   grid-column: 1/3;
+  margin-bottom: 15px;
 }
 
 .reviews-nav {
@@ -704,6 +706,7 @@ h2 {
   display: grid;
   grid-template-columns: 80% 20%;
   grid-template-rows: repeat(5, 100px);
+  margin-bottom: 15px;
 }
 
 /* VIP */
@@ -757,14 +760,26 @@ h2 {
 .voices-ctn {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, max-content);
+  grid-template-rows: repeat(3, max-content);
   margin-bottom: 15px;
 }
 
+.voices-one,
+.voices-two,
+.voices-three,
+.voices-four {
+  border-right: 1px solid grey;
+}
 .voices-title,
 .voices-headline,
-.voices-authour {
+.voices-authour,
+.more-v {
   color: #ffffff;
+}
+
+.more-v {
+  grid-column: 4;
+  grid-row: 4;
 }
 .voices-headline {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -772,7 +787,8 @@ h2 {
 }
 .voices-authour {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 6px;
+  padding: 3px;
+  border-bottom: 1px solid grey;
 }
 .voices-title {
   grid-column: 1/-1;
@@ -783,7 +799,6 @@ h2 {
 .voices-one {
   grid-column: 1/2;
   grid-row: 2/3;
-  border-right: 1px solid grey;
 }
 
 .voices-two {
@@ -830,34 +845,45 @@ h2 {
 .awards-ctn {
   display: grid;
   grid-template-columns: 50% 25% 25%;
-  grid-template-rows: repeat(4, max-content);
+  grid-template-rows: repeat(5, max-content);
   background-color: #ffffff;
   margin-bottom: 15px;
+  border-top: 5px solid #243842;
 }
 
 .awards-one {
   grid-column: 1/2;
   grid-row: 3/5;
+  border-right: 1px solid hotpink;
+  padding: 10px;
 }
 
 .awards-two {
   grid-column: 3;
   grid-row: 4;
+  border-bottom: 1px solid hotpink;
+  padding: 8px;
 }
 
 .awards-three {
   grid-column: 2;
   grid-row: 4;
+  border-bottom: 1px solid hotpink;
+  padding: 8px;
 }
 
 .awards-four {
   grid-column: 3;
   grid-row: 3;
+  padding: 8px;
+  border-bottom: 1px solid hotpink;
 }
 
 .awards-five {
   grid-column: 2;
   grid-row: 3;
+  padding: 8px;
+  border-bottom: 1px solid hotpink;
 }
 
 .awards-one-img {
@@ -870,6 +896,10 @@ h2 {
   height: 200px;
 }
 
+.more-awards {
+  grid-column: 3;
+  grid-row: 5;
+}
 /* OTHER NEWS CONTAINER */
 .o-news-ctn {
   display: grid;
@@ -879,31 +909,51 @@ h2 {
   grid-template-rows: 1fr;
   background-color: #ffffff;
   margin-bottom: 15px;
+  border-top: 5px solid #243842;
 }
 
 .tv {
   grid-column: 1/2;
   grid-row: 2/3;
+  border-right: 1px solid hotpink;
 }
 
 .film {
   grid-column: 2/3;
   grid-row: 2/3;
+  border-right: 1px solid hotpink;
 }
 
 .music {
   grid-column: 3/4;
   grid-row: 2/3;
+  border-right: 1px solid hotpink;
 }
 .theater {
   grid-column: 4/5;
   grid-row: 2/3;
 }
 
-.o-news-headlines {
-  padding: 5px;
+.o-news-headlines,
+.o-news-headline-main {
+  padding: 12px;
+}
+.o-news-headline-main {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
+.o-news-tv-title,
+.o-news-film-title,
+.o-news-music-title,
+.o-news-theater-title {
+  padding: 10px;
+}
+.o-news-img {
+  width: 300px;
+  height: 200px;
+  padding: 12px;
+}
 /* OTHER NEWS TWO */
 .o-news-two-ctn {
   display: grid;
@@ -911,6 +961,7 @@ h2 {
   grid-template-rows: 1fr;
   background-color: #ffffff;
   margin-bottom: 15px;
+  border-top: 5px solid;
 }
 
 /* MAGAZINE */
@@ -927,8 +978,47 @@ h2 {
   margin-bottom: 15px;
 }
 
+/* MAGAZINE HEADLINE */
+.mag-headline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding: 10px 0px 10px 0px;
+}
+.magazine-sub {
+  font-family: IBM Plex Mono, monospace;
+  text-transform: uppercase;
+  grid-column: 3/4;
+  padding: 10px 0px 10px 0px;
+}
+
+.mag-image {
+  width: 260px;
+  height: 340px;
+}
+
 .mag-one {
-  grid-column: 1;
+  grid-column: 1/2;
+  border-right: 1px solid hotpink;
+}
+
+.mag-two {
+  grid-column: 2/3;
+  border-right: 1px solid hotpink;
+}
+.mag-three {
+  grid-column: 3/4;
+  border-right: 1px solid hotpink;
+}
+.mag-four {
+  grid-column: 4/5;
+}
+
+.mag-one,
+.mag-two,
+.mag-three,
+.mag-four,
+.mag-title {
+  padding: 10px;
 }
 /* MORE FROM OUR BRANDS */
 .brands {
@@ -950,6 +1040,34 @@ h2 {
 .brand-image {
   height: 200px;
   width: 220px;
+}
+
+.brand-tag {
+  font-family: IBM Plex Mono, monospace;
+  text-transform: uppercase;
+}
+
+.brand-headline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.bn1,
+.bn2,
+.bn3,
+.bn4,
+.bn5 {
+  padding: 10px;
+}
+
+.bn1,
+.bn2,
+.bn3,
+.bn4 {
+  border-right: 1px solid hotpink;
+}
+.brand-tag,
+.brand-headline {
+  padding: 2px;
 }
 /* FOOTER */
 footer {
