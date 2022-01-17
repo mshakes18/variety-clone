@@ -52,14 +52,29 @@ h2 {
 /* BREAKING NEWS */
 .breaking-news {
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 20px;
   background-color: #ffffff;
   display: flex;
+  padding: 8px;
+  justify-content: center;
 }
-.breaking-one {
+.breaking-one,
+.breaking-two,
+.breaking-three,
+.breaking-four {
   display: flex;
   flex-direction: column;
+  padding: 8px;
+}
+.breaking-one,
+.breaking-two,
+.breaking-three {
+  border-right: 1px solid #c4cace;
+}
+
+.breaking-hl {
+  font-size: 14px;
 }
 /* STORY FONT STYLES */
 .story-title {
@@ -640,16 +655,14 @@ h2 {
   padding: 0 12px;
   border: 1px;
 }
-.sb-img {
+.sb-img,
+.sb-two-img {
   width: 100%;
 }
-.sb-two-img {
-  height: 180px;
-  width: 270px;
-}
+
 .sb-sub-img {
   height: 105px;
-  width: 105px;
+  width: 100%;
 }
 
 .ln-sb-three,
@@ -739,10 +752,10 @@ h2 {
   background-color: #243842;
   color: #ffffff;
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: repeat(2, min-content);
+  /* 75% 25%; */
   grid-template-rows: repeat(2, min-content);
   margin-bottom: 15px;
-  height: 300px;
 }
 
 .video-ctn-title {
@@ -770,18 +783,20 @@ h2 {
   padding: 8px;
 }
 .mv-image {
-  width: 900px;
+  width: 800px;
   height: 500px;
 }
 .fixed-content {
   /* top: 0;
   bottom: 0;
   position: fixed; */
-  height: 300px;
+  height: 500px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
+.video-sidebar {
+  padding: 20px;
+}
 /* VIP */
 .vip {
   grid-row: 9;
